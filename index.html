@@ -18,46 +18,154 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div class="col col-sm">
-                </div>
+                <div class="col-12 col-sm-3" onClick="nav('overview');">
+					<h4>Valerene's UID Journal</h3>
+					<p>SUTD Term 7 | 50.006 </p>
+				</div>
+				<div class="col-12 col-sm-3 align-self-center" onClick="nav('users');">
+					<h4>Classification of Users</h4>
+				</div>
+				<div class="col-12 col-sm-3 align-self-center" onClick="nav('personas');">
+					<h4>User Personas</h4>
+				</div>
+				<div class="col-12 col-sm-3 align-self-center" onClick="nav('flowchart');">
+					<h4>User Flow Diagram</h4>
+				</div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Our Lipsmacking Culinary Creations</h3>
-            </div>
-            <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-            </div>
-        </div>
+        <div class="row legend">
+            <div class="col-12 col-sm-2">
+                <img src="./maps/legend.png" class="legend">
+                <img src="./maps/features.png" usemap="#features" class="legend">
+                <text onClick="features('f1')">User Onboarding</text><br/>
+                <text onClick="features('f2')">Home Page</text><br/>
+                <text onClick="features('f3')">Meal Logging</text><br/>
+                <text onClick="features('f4')">Statistics</text><br/>
+                <text onClick="features('f5')">Recommended Foods</text><br/>
+                <text onClick="features('f6')">Goal Setting</text><br/>
+                <text onClick="features('f7')">other Settings</text><br/>
 
+            </div>
+            <div class="col-12 col-sm-3">
+                <!-- <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p> -->
+                <img id="overview" src="./maps/overview.png">		
+                <img id="personas" src="./maps/personas.png" usemap="#personas">
+                <map name="#personas">
+                    <area target="" alt="p1" title="p1" href="#" coords="37,86,21" shape="circle" onmouseover="display('p1')">
+                    <area target="" alt="p2" title="p2" href="#" coords="102,86,21" shape="circle" onmouseover="display('p2')">
+                    <area target="" alt="p3" title="p3" href="#" coords="166,86,21" shape="circle" onmouseover="display('p3')">
+                    <area target="" alt="p4" title="p4" href="#" coords="36,179,21" shape="circle" onmouseover="display('p4')">
+                    <area target="" alt="p5" title="p5" href="#" coords="101,179,21" shape="circle" onmouseover="display('p5')">
+                    <area target="" alt="p6" title="p6" href="#" coords="165,179,21" shape="circle" onmouseover="display('p6')">
+                </map>
+                <img id="flowcharts" src="./maps/flowcharts.png" usemap="#flowcharts">
+                <map name="#flowcharts">
+                    <area target="" alt="f1" title="f1" href="#" coords="37,86,21" shape="circle" onmouseover="display('f1')">
+                    <area target="" alt="f2" title="f2" href="#" coords="102,86,21" shape="circle" onmouseover="display('f2')">
+                    <area target="" alt="f3" title="f3" href="#" coords="166,86,21" shape="circle" onmouseover="display('f3')">
+                    <area target="" alt="f4" title="f4" href="#" coords="101,179,21" shape="circle" onmouseover="display('f4')">
+                </map>
+                <div id="feature-trees">
+                    <img id="f1" src="./maps/user_onboarding.png" usemap="#f1">
+                    <map name="#f1">					
+                        <area target="" alt="1a" title="1a" href="#" coords="32,73,21" shape="circle" onmouseover="display('1a')">
+                        <area target="" alt="1b" title="1b" href="#" coords="96,56,21" shape="circle" onmouseover="display('1b')">
+                        <area target="" alt="1c" title="1c" href="#" coords="161,74,21" shape="circle" onmouseover="display('1c')">
+                        <area target="" alt="1d" title="1d" href="#" coords="97,156,21" shape="circle" onmouseover="display('1d')">
+                        <area target="" alt="1e" title="1e" href="#" coords="96,232,21" shape="circle" onmouseover="display('1e')">
+                        <area target="" alt="1f" title="1f" href="#" coords="96,306,21" shape="circle" onmouseover="display('1f')">
+                    </map>
 
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
-        </div>
+                    <img id="f2" src="./maps/home_page.png" usemap="#f2">
+                    <map name="#f2">
+                        <area target="" alt="2a" title="2a" href="#" coords="20,66,19" shape="circle" onmouseover="display('2a')">
+                        <area target="" alt="2b" title="2b" href="#" coords="72,59,19" shape="circle" onmouseover="display('2b')">
+                        <area target="" alt="2c" title="2c" href="#" coords="126,59,19" shape="circle" onmouseover="display('2c')">
+                        <area target="" alt="2d" title="2d" href="#" coords="180,66,19" shape="circle" onmouseover="display('2d')">
+                        <area target="" alt="2e" title="2e" href="#" coords="100,136,19" shape="circle" onmouseover="display('2e')">
+                        <area target="" alt="2f" title="2f" href="#" coords="20,210,19" shape="circle" onmouseover="display('2f')">
+                        <area target="" alt="2g" title="2g" href="#" coords="73,203,19" shape="circle" onmouseover="display('2g')">
+                        <area target="" alt="2h" title="2h" href="#" coords="127,203,19" shape="circle" onmouseover="display('2h')">
+                        <area target="" alt="2i" title="2i" href="#" coords="181,210,19" shape="circle" onmouseover="display('2i')">
+                        <area target="" alt="2j" title="2j" href="#" coords="100,279,19" shape="circle" onmouseover="display('2j')">
+                        <area target="" alt="2k" title="2k" href="#" coords="100,348,19" shape="circle" onmouseover="display('2k')">
+                    </map>
 
-        <div class = "row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
+                    <img id="f3" src="./maps/meal-log.png" usemap="#f3">
+                    <map name="#f3">
+                        <area target="" alt="3a" title="3a" href="#" coords="20,56,18" shape="circle" onmouseover="display('3a')">
+                        <area target="" alt="3b" title="3b" href="#" coords="68,51,18" shape="circle" onmouseover="display('3b')">
+                        <area target="" alt="3c" title="3c" href="#" coords="115,51,18" shape="circle" onmouseover="display('3c')">
+                        <area target="" alt="3d" title="3d" href="#" coords="163,57,18" shape="circle" onmouseover="display('3d')">
+                        <area target="" alt="3e" title="3e" href="#" coords="94,99,18" shape="circle" onmouseover="display('3e')">
+                        <area target="" alt="3f" title="3f" href="#" coords="25,159,18" shape="circle" onmouseover="display('3f')">
+                        <area target="" alt="3g" title="3g" href="#" coords="71,160,18" shape="circle" onmouseover="display('3g')">
+                        <area target="" alt="3h" title="3h" href="#" coords="26,207,18" shape="circle" onmouseover="display('3h')">
+                        <area target="" alt="3i" title="3i" href="#" coords="72,208,18" shape="circle" onmouseover="display('3i')">
+                        <area target="" alt="3j" title="3j" href="#" coords="127,183,18" shape="circle" onmouseover="display('3j')">
+                        <area target="" alt="3k" title="3k" href="#" coords="182,183,18" shape="circle" onmouseover="display('3k')">
+                        <area target="" alt="3l" title="3l" href="#" coords="66,251,18" shape="circle" onmouseover="display('3l')">
+                        <area target="" alt="3m" title="3m" href="#" coords="128,253,18" shape="circle" onmouseover="display('3m')">
+                        <area target="" alt="3n" title="3n" href="#" coords="182,254,18" shape="circle" onmouseover="display('3n')">
+                        <area target="" alt="3o" title="3o" href="#" coords="33,331,18" shape="circle" onmouseover="display('3o')">
+                        <area target="" alt="3p" title="3p" href="#" coords="33,372,18" shape="circle" onmouseover="display('3p')">
+                        <area target="" alt="3q" title="3q" href="#" coords="33,412,18" shape="circle" onmouseover="display('3q')">
+                        <area target="" alt="3r" title="3r" href="#" coords="79,373,18" shape="circle" onmouseover="display('3r')">
+                        <area target="" alt="3s" title="3s" href="#" coords="171,352,18" shape="circle" onmouseover="display('3s')">
+                        <area target="" alt="3t" title="3t" href="#" coords="129,406,18" shape="circle" onmouseover="display('3t')">
+                        <area target="" alt="3u" title="3u" href="#" coords="174,406,18" shape="circle" onmouseover="display('3u')">
+                        <area target="" alt="3v" title="3v" href="#" coords="82,451,18" shape="circle" onmouseover="display('3v')">
+                        <area target="" alt="3w" title="3w" href="#" coords="147,451,18" shape="circle" onmouseover="display('3w')">
+                        <area target="" alt="3-all" title="3-all" href="#" coords="165,123,22" shape="circle" onmouseover="display('3-all')">
+                        <area target="" alt="3-info" title="3-info" href="#" coords="90,289,5" shape="circle" onmouseover="display('3-info')">
+                    </map>
+                    <img id="f4" src="./maps/statistics.png" usemap="#f4">
+                    <map name="#f4">
+                        <area target="" alt="4a" title="4a" href="#" coords="21,70,21" shape="circle" onmouseover="display('4a')">
+                        <area target="" alt="4b" title="4b" href="#" coords="85,53,21" shape="circle" onmouseover="display('4b')">
+                        <area target="" alt="4c" title="4c" href="#" coords="150,71,21" shape="circle" onmouseover="display('4c')">
+                        <area target="" alt="4d" title="4d" href="#" coords="85,142,21" shape="circle" onmouseover="display('4d')">
+                        <area target="" alt="4e" title="4e" href="#" coords="86,214,21" shape="circle" onmouseover="display('4e')">
+                        <area target="" alt="4f" title="4f" href="#" coords="55,311,21" shape="circle" onmouseover="display('4f')">
+                        <area target="" alt="4g" title="4g" href="#" coords="114,312,21" shape="circle" onmouseover="display('4g')">
+                        <area target="" alt="4h" title="4h" href="#" coords="55,367,21" shape="circle" onmouseover="display('4h')">
+                        <area target="" alt="4i" title="4i" href="#" coords="86,431,21" shape="circle" onmouseover="display('4i')">
+                    </map>
+                    <img id="f5" src="./maps/recommend-foods.png" usemap="#f5">
+                    <map name="#f5">
+                        <area target="" alt="5a" title="5a" href="#" coords="20,89,19" shape="circle" onmouseover="display('5a')">
+                        <area target="" alt="5b" title="5b" href="#" coords="73,82,19" shape="circle" onmouseover="display('5b')">
+                        <area target="" alt="5c" title="5c" href="#" coords="126,82,19" shape="circle" onmouseover="display('5c')">
+                        <area target="" alt="5d" title="5d" href="#" coords="180,89,19" shape="circle" onmouseover="display('5d')">
+                        <area target="" alt="5e" title="5e" href="#" coords="99,158,19" shape="circle" onmouseover="display('5e')">
+                        <area target="" alt="5f" title="5f" href="#" coords="60,243,19" shape="circle" onmouseover="display('5f')">
+                        <area target="" alt="5g" title="5g" href="#" coords="60,311,19" shape="circle" onmouseover="display('5g')">
+                        <area target="" alt="5h" title="5h" href="#" coords="59,379,19" shape="circle" onmouseover="display('5h')">
+                        <area target="" alt="5i" title="5i" href="#" coords="140,243,19" shape="circle" onmouseover="display('5i')">
+                        <area target="" alt="5j" title="5j" href="#" coords="140,312,19" shape="circle" onmouseover="display('5j')">
+                        <area target="" alt="5k" title="5k" href="#" coords="140,379,19" shape="circle" onmouseover="display('5k')">
+                    </map>
+                    <img id="f6" src="./maps/goal-setting.png" usemap="#f6">
+                    <map name="#f6">
+                        <area target="" alt="6a" title="6a" href="#" coords="70,54,21" shape="circle" onmouseover="display('6a')">
+                        <area target="" alt="6b" title="6b" href="#" coords="35,116,21" shape="circle" onmouseover="display('6b')">
+                        <area target="" alt="6c" title="6c" href="#" coords="105,118,21" shape="circle" onmouseover="display('6c')">
+                        <area target="" alt="6d" title="6d" href="#" coords="69,181,21" shape="circle" onmouseover="display('6d')">
+                        <area target="" alt="6e" title="6e" href="#" coords="69,253,21" shape="circle" onmouseover="display('6e')">
+                    </map>
+                    <img id="f7" src="./maps/other-settings.png" usemap="#f7">
+                    <map name="#f7">
+                        <area target="" alt="7a" title="7a" href="#" coords="82,57,21" shape="circle" onmouseover="display('7a')">
+                        <area target="" alt="7b" title="7b" href="#" coords="82,132,21" shape="circle" onmouseover="display('7b')">
+                        <area target="" alt="7c" title="7c" href="#" coords="82,209,21" shape="circle" onmouseover="display('7c')">
+                    </map>
+                </div>
             </div>
-            <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+            <div class="col col-sm">
+                <img id="appear" src="./img/overview.png" class="image">
             </div>
         </div>
     </div>
@@ -68,37 +176,24 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="https://www.linkedin.com/in/valerene-goh/">LinkedIn</a></li>
+                        <li><a href="https://github.com/ValereneGoh/">GitHub</a></li>
+                        <li><a href="https://www.facebook.com/val.goh.56">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/valotheweirdo/">Instagram</a></li>
+                        <li><a href="mailto:valerenegoh@gmail.com">Email</a></li>
                     </ul>
                 </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
-                    </div>
+                <div class="col-7 col-sm">
+                    <h5>About Me</h5>
+                    <p>Hi! I am an Information Systems Technology and Design (ISTD) graduate specializing in Artificial Intelligence and UI/UX design at the Singapore University of Technology and Design (SUTD). I have a keen interest in mobile and web design but also love working with people and managing projects.</p>
+                    <p>I am highly self-motivated, inquisitive and growth-oriented because I love learning new things. Other than possessing technical knowledge in software engineering and programming languages, I pride myself in being a fast and adaptive learner with strong analytical and verbal communication skills.</p>
+                    <p>I have always believed in the power of imagination and continue to adopt that mentality in pursuing the things I love in life. I am a strong advocate and participant of the Visual and Performing Arts, demonstrating great zest and talent for singing, dancing, music, writing, drawing and photography. Sharing the joy with people who share the same passion just makes it better.</p>
+                    <p>I can be contacted via LinkedIn if you would like to get in touch.</p>
                 </div>
            </div>
            <div class="row justify-content-center">             
                 <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                    <h6>© Copyright 2021 Valerene Goh</h6>
                 </div>
            </div>
         </div>
@@ -108,6 +203,55 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+    <script type="text/javascript">
+		// HEADER OPTIONS
+		function nav(header) {
+			document.getElementById("feature-trees").style.display = "none";
+			if(header == 'overview'){
+				document.getElementById("personas").style.display = "none";
+				document.getElementById("flowcharts").style.display = "none";
+				document.getElementById("appear").src = "./img/overview.png";
+				document.getElementById("overview").style.display = "block";
+			} else if(header == 'users'){
+				document.getElementById("personas").style.display = "none";
+				document.getElementById("flowcharts").style.display = "none"; 		
+				document.getElementById("overview").style.display = "none";
+				document.getElementById("appear").src = "./maps/user-classif.png";
+			} else if(header == "personas"){		
+				document.getElementById("flowcharts").style.display = "none";
+				document.getElementById("overview").style.display = "none";
+				document.getElementById("appear").src = "./maps/user-persona.png";
+				document.getElementById("personas").style.display = "block";
+			} else if(header == "flowchart"){
+				document.getElementById("personas").style.display = "none";
+				document.getElementById("overview").style.display = "none";
+				document.getElementById("appear").src = "";   
+				document.getElementById("flowcharts").style.display = "block"; 		
+			}
+        }
+        // TREE DIAGRAM
+        function display(source) {
+            document.getElementById("appear").src = "./img/" + source + ".png";
+        }
+        // FEATURES MENU BUTTONS
+        function features(feature) {
+            document.getElementById("overview").style.display = "none";
+            document.getElementById("personas").style.display = "none";
+            document.getElementById("flowcharts").style.display = "none";
+            document.getElementById("feature-trees").style.display = "block";
+            document.getElementById("appear").src = "";
+            var features = ['f1','f2','f3','f4','f5','f6','f7'];
+            for(i=0;i<features.length;i++){
+                if(features[i] != feature){
+                    document.getElementById(features[i]).style.display = "none";  
+                }
+            }
+            document.getElementById(feature).style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
