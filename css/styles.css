@@ -10,7 +10,11 @@ p {
 
 text{
     font-size: 14px;
+    padding: 5px 5px;
+    cursor: pointer;
 }
+
+div[onClick] { cursor: pointer; }
 
 .footer {
     background-color: #78beca;
