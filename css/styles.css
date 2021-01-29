@@ -1,6 +1,9 @@
 .row-header {
     margin: 0px auto;    /*TB LR*/
     padding: 0px auto;
+}
+
+.tabs{
     text-align: center;
 }
 
